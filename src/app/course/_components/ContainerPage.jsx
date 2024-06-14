@@ -111,7 +111,7 @@ const ContainerPage = ({
         sx={{ justifyContent: { xs: "center", sm: "space-between" } }}
       >
         <Box className="info-course-in-course-page">
-          <Image src={image} alt="Logo Image" width={300} height={300} />
+          <Image style={{width:"300px",height:"200px"}} src={image} alt="Logo Image" width={300} height={300} />
 
           <Typography
             sx={{ fontWeight: "700", fontSize: "22px", mb: 2, mt: 2 }}
