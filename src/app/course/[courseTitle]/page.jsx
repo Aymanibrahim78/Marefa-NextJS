@@ -6,7 +6,7 @@ import Loading from "./loading";
 async function getData() {
   // await new Promise(resolve => setTimeout(resolve, 6000))
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}cousrses?populate[instructor][populate]=Image&populate[Lessons][populate]=*&populate[Image][populate]&populate[course_category][populate]`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}cousrses?populate[instructor][populate]=Image&populate[Lessons][populate]=*&populate[Image][populate]&populate[course_category][populate]`, { next: { revalidate: 100 } });
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
