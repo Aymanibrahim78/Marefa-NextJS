@@ -10,7 +10,7 @@ import NotFoundSec from '@/_components/NotFoundSec';
   async function getData() {
     // await new Promise(resolve => setTimeout(resolve, 6000))
   
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}cousrses?populate=*`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}cousrses?populate=*`, { next: { revalidate: 100 } });
   
     if (!res.ok) {
       throw new Error("Failed to fetch data");
