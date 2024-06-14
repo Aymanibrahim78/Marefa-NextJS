@@ -106,7 +106,7 @@ const page = async ({ params }) => {
           </Typography>
         </Box>
 
-        <Stack direction={"row"} sx={{ border: "solid 1px red" }} gap={1} className='social-media' >
+        <Stack direction={"row"}  gap={1} className='social-media' >
         {infoInstructor.attributes.webSite? (<a style={{all:'unset'}} target='_blank' href={infoInstructor.attributes.webSite}> <IconButton> <LanguageIcon  /></IconButton></a>):""}
       {infoInstructor.attributes.facebook? (<a style={{all:'unset'}} target='_blank' href={infoInstructor.attributes.facebook}> <IconButton> <FacebookIcon  /></IconButton></a>):""}
       {infoInstructor.attributes.youtube? (<a style={{all:'unset'}} target='_blank' href={infoInstructor.attributes.youtube}> <IconButton> <YouTubeIcon  /></IconButton></a>):""}
