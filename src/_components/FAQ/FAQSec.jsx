@@ -3,7 +3,7 @@
 import FAQ from "./FAQ"
 
 async function getData() {
-    await new Promise(resolve => setTimeout(resolve, 6000))
+    // await new Promise(resolve => setTimeout(resolve, 6000))
   
     const res = await fetch( `${process.env.NEXT_PUBLIC_API_URL}faqs`,);
   
