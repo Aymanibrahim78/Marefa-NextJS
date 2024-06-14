@@ -10,7 +10,7 @@ async function getData() {
   // await new Promise(resolve => setTimeout(resolve, 6000))
 
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}course-categories?populate[Image][populate]&populate[courses][populate]=Image&populate[courses][populate]=Lessons`);
+      `${process.env.NEXT_PUBLIC_API_URL}course-categories?populate[Image][populate]&populate[courses][populate]=Image&populate[courses][populate]=Lessons`, { next: { revalidate: 100 } });
   
     if (!res.ok) {
       throw new Error("Failed to fetch data");
