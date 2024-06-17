@@ -153,8 +153,8 @@ const ContainerPage = ({
             <Stack direction={"row"} gap={0.5} alignItems={"center"}>
               <AccountCircleOutlinedIcon fontSize="sm" />
               <Typography variant="body" fontSize={"sm"}>
-              Students :  {NumberOfStudents > 1000
-                  ? `${NumberOfStudents / 1000}K`
+              Students :  {NumberOfStudents >= 1000
+                  ? `${(NumberOfStudents / 1000).toFixed(2)}K`
                   : NumberOfStudents}
                 
               </Typography>
