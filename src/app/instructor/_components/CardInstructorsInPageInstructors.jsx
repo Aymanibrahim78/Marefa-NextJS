@@ -27,7 +27,7 @@ const CardInstructorsInPageInstructors = ({nameInstructor,jobInstructor,imageIns
       <Typography variant="body1" sx={{fontSize:"15px",fontWeight:'500',color:"GrayText"}} >{jobInstructor}</Typography>
     </Box>
 
-    <Stack direction={"row"}  my={2} gap={1} className='social-media' >
+    <Stack direction={"row"}  mt={2} gap={1} className='social-media' >
 
       {website? (<a style={{all:'unset'}} target='_blank' href={website}> <IconButton> <LanguageIcon  /></IconButton></a>):""}
       {facebook? (<a style={{all:'unset'}} target='_blank' href={facebook}> <IconButton> <FacebookIcon  /></IconButton></a>):""}
