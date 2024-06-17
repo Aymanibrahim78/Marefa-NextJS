@@ -65,7 +65,7 @@ const CourseCard = ({title,NumberOfStudents,image,rating,NumberOfLessons,price,L
         </Stack>
         <Stack direction={"row"} alignItems={"center"}  justifyContent={"space-between"} gap={0.25}  >
           <AccountCircleOutlinedIcon sx={{ fontSize: "19px" }} />
-        <Typography  component="span" >{NumberOfStudents>1000? `${NumberOfStudents/1000}K` : NumberOfStudents } Students </Typography>
+        <Typography  component="span" >{NumberOfStudents>=1000? `${(NumberOfStudents/1000).toFixed(1)}K` : NumberOfStudents } Students </Typography>
 
          
         </Stack>
