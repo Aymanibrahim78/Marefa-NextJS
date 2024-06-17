@@ -154,7 +154,7 @@ const ContainerPage = ({
               <AccountCircleOutlinedIcon fontSize="sm" />
               <Typography variant="body" fontSize={"sm"}>
               Students :  {NumberOfStudents >= 1000
-                  ? `${(NumberOfStudents / 1000).toFixed(2)}K`
+                  ? `${(NumberOfStudents / 1000).toFixed(1)}K`
                   : NumberOfStudents}
                 
               </Typography>
