@@ -3,7 +3,7 @@ import './FeaturesSec.css'
 import {Container,Stack,Box} from '@mui/material'
 import VerifiedOutlinedIcon from '@mui/icons-material/VerifiedOutlined';
 import AllInclusiveOutlinedIcon from '@mui/icons-material/AllInclusiveOutlined';
-
+import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
 
 
 const FeaturesSec = () => {
@@ -38,7 +38,7 @@ const FeaturesSec = () => {
 
 
             <Box className='box-border-features'>
-                <VerifiedOutlinedIcon sx={{fontSize:"40px",color:"#969696"}} />
+                <SmartDisplayIcon sx={{fontSize:"40px",color:"#969696"}} />
                 <h5 className='title-features'>Easy Access</h5>
                 <p className='description-features'>Opt for a tutor with easy access, ensuring convenience for your learning sessions.</p>
 
