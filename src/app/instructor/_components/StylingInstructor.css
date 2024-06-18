@@ -1,10 +1,10 @@
 .card-instructor{
     width: 350px;
-    height: 300px;
+    height: 350px;
     background-color:var(--bgCard) ;
     border: solid 1px var(--borederCard);
 transition: all 0.5s;
-    padding: 6px;
+    padding: 10px;
    border-radius:10px ;
    box-shadow: rgba(149, 157, 165, 0.067) 0px 8px 24px;
    
