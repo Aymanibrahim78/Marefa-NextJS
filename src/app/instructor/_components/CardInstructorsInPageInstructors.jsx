@@ -14,8 +14,8 @@ const CardInstructorsInPageInstructors = ({nameInstructor,jobInstructor,imageIns
   
   return (
     <Box className="card-instructor">
-      <Box sx={{height:"50%",mb:2}} >
-      <Image src={imageInstructor} alt="Logo Image" style={{width:"100%",height:"100%",borderRadius:"50%",borderRadius:"10px"}} width={100} height={100} />
+      <Box sx={{height:"60%",mb:2}} >
+      <Image src={imageInstructor} alt="Logo Image" style={{width:"100%",height:"100%",borderRadius:"10px"}} width={100} height={100} />
 
       </Box>
 
