@@ -66,7 +66,7 @@ const page = async ({params}) => {
  
         <Container maxWidth="lg" className='contPaae'   sx={{direction:blogs.attributes.languageArabic==true ?"rtl":"ltr"}} >
             <Box>
-            <Typography sx={{fontSize:{xs:"20px",sm:"25px",lg:"35px"},fontWeight:"700",mt:5,}} variant="body1" >{blogs.attributes.title}</Typography>
+            <Typography sx={{fontSize:{xs:"20px",sm:"30px",lg:"45px"},fontWeight:"800",mt:5,}} variant="body1" >{blogs.attributes.title}</Typography>
 
             <Typography sx={{ color: "#AAAAAA" }} my={2} variant="body1">
           {blogs.attributes.description}
