@@ -31,7 +31,7 @@ if(data.data.length<1){
   return (
     <>
   
-        <FAQ FAQDataApi={data.data.reverse()} />
+        <FAQ FAQDataApi={data.data} />
       
     </>
   )
