@@ -17,30 +17,30 @@ const MenuOfMob = () => {
 <MenuIcon onClick={()=>{setShowMenu("flex ") ;setShowMenuIcon("none !important")}} className='menu-close-icon' sx={{color:"#2CAAC1" ,fontSize:"35px",cursor:"pointer",display:showMenuIcon}} />
 <CloseIcon onClick={()=>{setShowMenu("none"),setShowMenuIcon("block !important")}}   sx={{color:"#2CAAC1" ,fontSize:"35px",cursor:"pointer",display:showMenu}}/>
 <nav style={{display:showMenu}} className='bg-nav-link-mob'>
-<ui className="nav-header-mob" onClick={()=>{setShowMenu("none"),setShowMenuIcon("block !important")}}>
+<ui className="nav-header-mob" >
             <li>
-              <Link className="item-nav-header" href="/">
+              <Link className="item-nav-header" href="/" onClick={()=>{setShowMenu("none"),setShowMenuIcon("block !important")}} >
               Home
               </Link>
             </li>
           <li>
-              <Link className="item-nav-header" href="/course">
+              <Link className="item-nav-header" href="/course" onClick={()=>{setShowMenu("none"),setShowMenuIcon("block !important")}}>
                 Our Courses
               </Link>
             </li>
             <li>
-              <Link className="item-nav-header" href="/blog">
+              <Link className="item-nav-header" href="/blog" onClick={()=>{setShowMenu("none"),setShowMenuIcon("block !important")}}>
                 Blog
               </Link>
             </li>
             <li>
-              <Link className="item-nav-header" href="/contactus">
+              <Link className="item-nav-header" href="/contactus" onClick={()=>{setShowMenu("none"),setShowMenuIcon("block !important")}}>
                 Contact Us
               </Link>
             </li>
           
             <li>
-              <Link className="item-nav-header" href="/faq">
+              <Link className="item-nav-header" href="/faq" onClick={()=>{setShowMenu("none"),setShowMenuIcon("block !important")}}>
               faq
               </Link>
             </li>
