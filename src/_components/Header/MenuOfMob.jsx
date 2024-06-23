@@ -44,7 +44,7 @@ const MenuOfMob = () => {
               faq
               </Link>
             </li>
-            {!user?(<Link style={{all:"unset"}} href='/sign-in' ><button className="signin-btn-mob">Sign In</button></Link>):""}
+            {!user?(<Link style={{all:"unset"}} href='/sign-in' onClick={()=>{setShowMenu("none"),setShowMenuIcon("block !important")}} ><button className="signin-btn-mob">Sign In</button></Link>):""}
          
 
           </ui>
