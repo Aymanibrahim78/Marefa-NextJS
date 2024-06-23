@@ -17,7 +17,7 @@ const MenuOfMob = () => {
 <MenuIcon onClick={()=>{setShowMenu("flex ") ;setShowMenuIcon("none !important")}} className='menu-close-icon' sx={{color:"#2CAAC1" ,fontSize:"35px",cursor:"pointer",display:showMenuIcon}} />
 <CloseIcon onClick={()=>{setShowMenu("none"),setShowMenuIcon("block !important")}}   sx={{color:"#2CAAC1" ,fontSize:"35px",cursor:"pointer",display:showMenu}}/>
 <nav style={{display:showMenu}} className='bg-nav-link-mob'>
-<ui className="nav-header-mob">
+<ui className="nav-header-mob" onClick={()=>{setShowMenu("none"),setShowMenuIcon("block !important")}}>
             <li>
               <Link className="item-nav-header" href="/">
               Home
